@@ -1,1 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,800;1,500&display=swap');
+
+body::after {
+    content: url('static\e.png') url('static\delete.png');
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 30vw;
+    height: 95vh;
+    background: linear-gradient(rgba(169, 95, 215, 0.508), rgba(180, 50, 130, 0.753));
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.heading {
+    width: 470px;
+    height: 90px;
+    background: linear-gradient(#5ae1d1, rgba(127, 165, 172, 0.655));
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 41px;
+    font-weight: bold;
+    color: rgba(58, 55, 55, 0.886);
+}
+
+.item {
+    position: relative;
+    width: 470px;
+    height: 90px;
+    background: linear-gradient(#4be5d3, rgba(127, 165, 172, 0.655));
+    margin: 10px auto;
+    
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(58, 55, 55, 0.886);
+    box-sizing: border-box;
+}
+
+.btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.btn button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: unset;
+    background-color: rgba(247, 243, 247, 0.655);
+
+}
+
+.btn button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.398);
+    cursor: pointer;
+}
+
 
