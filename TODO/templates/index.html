@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO's</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        #add {
+            position: relative;
+            left: 455px;
+        }
+    </style>
+
+
+    <script>
+        const image1 = new Image();
+        image1.src = 'static\e.png';
+
+        const image2 = new Image();
+        image2.src = 'static\delete.png';
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            MyTODO
+        </div>
+
+        {% for todos in data %}
+        <div class="item" id="todo-{{ todos._id }}">
+            <span id="todo-{{ todos._id }}">{{ todos.todo }}</span>
+            <div class="btn">
+                <button onclick="updateTodo('{{ todos._id }}')"><img src="static\e.png" alt="U" width="20px"></button>
+                <button onclick="deleteTodo('{{ todos._id }}')"><img src="static\delete.png" alt="R"
+                        width="25px"></button>
+            </div>
+        </div>
+        {% endfor %}
+        <img id="add" onclick="addTodo()" src="static\plus.png" alt="Icon" width="39px">
+    </div>
+    <script src="static\script.js"></script>
+
+</body>
+
+</html>
