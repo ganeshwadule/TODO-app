@@ -1,4 +1,4 @@
-Flask Todo App
+Flask Todo WEB App
 A lightweight Todo app built with HTML, CSS, JavaScript, and powered by the Flask Python framework.
 
 Features:
